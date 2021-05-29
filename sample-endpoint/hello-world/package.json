@@ -1,0 +1,11 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Hello World Service",
+  "main": "index.js",
+  "author": "Carlos Viana",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
