@@ -2,3 +2,21 @@ POST http://localhost:8001/services/hello-world-service/plugins
 Content-Type: application/x-www-form-urlencoded
 
 name=jwt&config.secret_is_base64=false&config.key_claim_name=kid&config.claims_to_verify=exp&config.run_on_preflight=true
+
+###
+POST http://localhost:8001/consumers/
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&custom_id=abcdefghij&tags=user-level&tags=low-priority
+
+###
+POST http://localhost:8001/consumers/admin/jwt 
+Content-Type: application/x-www-form-urlencoded
+
+###
+GET http://localhost:8000/api
+
+
+
+
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InZqbkR5S1dTb2N4b3ZaYmFCWnF1eFNVdlBpa3VVWjZGIn0.eyJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGVtYWlsLmNvbSIsImV4cCI6MTkwMDAwMDAwMH0.F_OEWked91eGd5Yxy_SyjVJCh2MDfrWHuHQYiiA4ZsE
